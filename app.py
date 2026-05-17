@@ -6,7 +6,7 @@ popular_df = pickle.load(open('popular.pkl', 'rb'))
 pt = pickle.load(open('pt.pkl', 'rb'))
 book = pickle.load(open('book.pkl', 'rb'))
 similarity_scores = pickle.load(open('similarity_scores.pkl', 'rb'))
-app = Flask(__name__, template_folder='Model/templates')
+app = Flask(__name__, template_folder='templates')
 
 @app.route('/')
 def index():
